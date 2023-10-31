@@ -365,6 +365,24 @@ footer form .btn{
         height: 600px;
     }
 }
+@media only screen and (max-width: 1344px) {
+    header .nav1 ul li {
+        font-size: 13px;
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width: 1281px) {
+    .counter-top p{
+        font-size: 14px;
+    }
+    .counter-top .btns {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     header .nav1{
         padding-bottom: 10px;
