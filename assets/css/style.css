@@ -1,22 +1,18 @@
 @font-face{
-    font-family: setaFont;
-    src: url(./../fonts/Seta\ Reta\ NF\ W01\ Regular.ttf);
+    font-family: bruumBoldFont;
+    src: url(./../fonts/Bruum\ FY\ Bold.otf);
 }
 @font-face{
-    font-family: acuminFont;
-    src: url(./../fonts/Acumin\ Pro\ Medium.otf);
+    font-family: bruumFont;
+    src: url(./../fonts/Bruum\ FY\ Black.otf);
 }
 @font-face{
-    font-family: acuminLightFont;
-    src: url(./../fonts/Acumin\ Pro\ Light.otf);
-}
-@font-face{
-    font-family: newJuneBoldFont;
-    src: url(./../fonts/NewJune-Bold.otf);
+    font-family: bruumLightFont;
+    src: url(./../fonts/Bruum\ FY\ Light.otf);
 }
 
 *{
-    font-family: acuminFont;
+    font-family: bruumLightFont;
     margin: 0;
     padding: 0;
 }
@@ -29,23 +25,32 @@ ul{
 /* start header */
 header{
     position: relative;
+    margin-bottom: 35px;
+    padding-bottom: 35px;
     border-bottom: 5px solid #027cc2;
 }
 header .nav1{
     margin-top: 25px;
     margin-bottom: 25px;
-    /* padding-bottom: 60px; */
+    background-color: #027cc2;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 74%;
 }
 
-header .nav1 ul li:first-of-type{
+/* header .nav1 ul li:first-of-type{
     border-top: 4px solid #027cc2;
-}
+} */
 header .nav1 ul li{
     font-size: 14px;
     margin-right: 25px;
     cursor: pointer;
     padding-top: 5px;
     margin-left: 2px;
+    color: #fff;
+    font-family: bruumLightFont;
 }
 /* header .nav1 ul li:hover{
     border-top: 4px solid #1b75ba;
@@ -54,12 +59,10 @@ header .nav1 ul li{
 .border-right {
     border-right: 1px solid #027cc2 !important;
 }
-header .nav1 .langs{
-    margin-top: -5px;
-    display: flex;
+header .langs{
+    margin-top: 5px;
 }
-header .nav1 .langs span{
-    font-family: acuminLightFont;
+header .langs span{
     font-size: 12px;
     color: #027cc2;
     cursor: pointer;
@@ -93,7 +96,6 @@ header .nav2 ul li{
     width: 90%;
 }
 .counter-top .btns button{
-    font-family: acuminLightFont;
     padding: 5px 10px;
     font-size: 14px;
     color: #f1efef;
@@ -102,12 +104,11 @@ header .nav2 ul li{
     background-color: #027cc2;
 }
 .counter-top p{
-    font-family: acuminLightFont;
     font-size: 16px;
     margin-bottom: 0;
+    text-align: center;
 }   
 .counter-top button.btn{
-    font-family: acuminLightFont;
     font-size: 14px;
 }   
 /* start counter */
@@ -115,10 +116,10 @@ header .nav2 ul li{
     margin: 30px 0;
 }
 .counter h2{
+    font-family: bruumBoldFont;
     color: #027cc2;
     font-size: 30px;
     font-weight: bold;
-    font-family: acuminFont;
     margin: 5px;
 }
 .counter i{
@@ -127,40 +128,47 @@ header .nav2 ul li{
 }
 .counter p{
     color: #888686;
-    font-family: acuminLightFont;
 }
 /* end counter */
 .datamatix-section{
     margin: 30px 0;
 }
 .datamatix-section h3{
-    font-family: newJuneBoldFont;
+    font-family: bruumBoldFont;
     font-size: 28px;
-    border-left: 4px solid #027cc2;
-    padding-left: 20px;
+    margin-bottom: 30px;
+    /* border-left: 4px solid #027cc2;
+    padding-left: 20px; */
 }
 .datamatix-section .lists ul li{
-    font-family: acuminLightFont;
     text-transform: capitalize;
 }
 .datamatix-section p{
-    font-family: acuminLightFont;
-    font-size: 18px;
+    font-size: 21px;
 }
 .datamatix-section a{
     color: #027cc2 !important;
-    font-family: acuminLightFont;
     font-size: 17px;
     cursor: pointer;
 }
 
 .banner_title{
-    font-family: newJuneBoldFont;
-    margin: 30px 0;
-    width: 90%;
+    margin: 40px 0 20px;
+    font-family: bruumBoldFont;
+    line-height: 40px;
+    font-size: 30px;
+    text-align: left;
+    width: 95%;
+}
+.banner_text{
+    width: 95%;
+    font-size: 20px;
 }
 
 /* start banners */
+.bannerTop{
+    background-image: url(./../img/imageeBanner.png);
+}
 .main-banner img{
     width: 100%;
 }
@@ -173,7 +181,7 @@ header .nav2 ul li{
     position: relative;
 }
 .banner-1{
-    background-image: url(./../img/10th_banner_1.jpg);
+    background-image: url(./../img/imageeBanner2.png);
     margin-bottom: 30px;
 }
 .banner-2{
@@ -198,10 +206,11 @@ header .nav2 ul li{
 
 .banner .banner-text h3{
     position: relative;
-    color: #027cc2;
-    font-family: newJuneBoldFont;
-    font-size: 27px;
-    margin-top: 70%;
+    /* color: #027cc2; */
+    font-family: bruumBoldFont;
+    font-size: 38px;
+    line-height: 42px;
+    margin-top: 75%;
 }
 .banner .banner-text hr{
     border-top: 2px solid #027cc2;
@@ -214,12 +223,10 @@ header .nav2 ul li{
     margin-right: 0;
 }
 .banner .banner-text p{
-    font-family: acuminLightFont;
     font-size: 18px;
-    /* margin-top: 20px; */
+    margin-top: 10px;
 }
 .banner .banner-text .btn-primary{
-    font-family: 'acuminLightFont';
     background-color: #027cc2;
     border: #027cc2;
     border-radius: 5px;
@@ -228,6 +235,9 @@ header .nav2 ul li{
 /* end banners */
 
 /* start gallery */
+.categories img{
+    margin-bottom: 25px;
+}
 .gallery{
     margin: 30px 0;
 }
@@ -236,66 +246,7 @@ header .nav2 ul li{
 }
 /* end gallery */
 
-/* start past event */
-.past-event .header{
-    margin: 30px 0;
-}
-.past-event .header h3{
-    border-left: 4px solid #027cc2;
-    padding-left: 20px;
-    font-family: newJuneBoldFont;
-    font-size: 30px;
-    color: #000;
-}
-.past-event .header a{
-    font-family: acuminLightFont;
-    color: #027cc2;
-    font-size: 17px;
-    cursor: pointer;
-    text-decoration: none;
-    /* display: flex;
-    justify-content: end; */
-}
-.past-event .header a:hover{
-    color: #0b354d;
-}
-.past-event .img-part{
-    width: 100%;
-    height: 500px;
-    position: relative;
-    margin-bottom: 50px;
-}
-.past-event .img-part img.img11{
-    width: 80%;
-    height: 100%;
-    /* border-radius: 50%; */
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.past-event .img-part img.next{
-    position: absolute;
-    right: 5%;
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.past-event .img-part img.back{
-    position: absolute;
-    left: 5%;
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
-}
-/* .past-event .img-part img{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-} */
-/* end past event */
-
 .footer-top h4{
-    font-family: newJuneBoldFont;
     width: 90%;
     margin: auto;
 }
@@ -309,17 +260,17 @@ footer{
 footer .logo {
     text-align: center;
 }
-footer .logo span{
+/* footer .logo span{
     font-family: boldFont;
-}
+} */
 footer h5{
     color: #027cc2;
     font-size: 17px;
+    font-family: bruumBoldFont;
 }
 footer .links span{
     color: #3d3b3b;
     font-size: 14px;
-    font-family: acuminLightFont;
     cursor: pointer;
 }
 footer .links span:hover{
@@ -332,7 +283,6 @@ footer .subscribe-label{
 }
 footer p.footr{
     font-size: 15px;
-    font-family: acuminLightFont;
     margin-top: 10px;
 }
 footer .copy-right{
@@ -342,7 +292,6 @@ footer .copy-right{
 }
 footer .copy-right p{
     font-size: 15px;
-    font-family: acuminLightFont;
     margin: auto;
     padding: 15px 0;
     text-align: center;
@@ -383,10 +332,20 @@ footer form .btn{
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1059px) {
     header .nav1{
-        padding-bottom: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 25px;
     }
+    header .nav1 ul li {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    /* header .nav1{
+        padding-bottom: 10px;
+    } */
 }
 @media only screen and (max-width: 1109px) {
     .counter-top .btns {
@@ -396,6 +355,9 @@ footer form .btn{
 @media only screen and (max-width: 991px) {
     .counter h2 {
         font-size: 24px;
+    }
+    .datamatix-section p {
+        font-size: 16px;
     }
     .banner .banner-text h3 {
         font-size: 20px;
@@ -408,6 +370,12 @@ footer form .btn{
     .banner .banner-text h3 br{
         display: none;
     }
+    .banner .banner-text h3 {
+        line-height: 27px;
+    }
+}
+@media only screen and (max-width: 940px) {
+
 }
 
 @media only screen and (max-width: 798px) {
@@ -430,8 +398,18 @@ footer form .btn{
     }
 }
 @media only screen and (max-width: 767px) {
+    header .nav1{
+        position: relative;
+        width: 100%;
+        padding: 25px;
+        margin: 0;
+    }
     header .nav2 {
         width: 100%;
+    }
+    header .left-part img{
+        margin: auto;
+        display: flex;
     }
     header .nav2 ul {
         margin-left: 0;
@@ -444,8 +422,7 @@ footer form .btn{
         margin: 20px auto;
     }
     .datamatix-section {
-        width: 90%;
-        margin: auto;
+        margin: 9% auto;
     }
     .datamatix-section h3{
         font-size: 20px;
@@ -456,6 +433,7 @@ footer form .btn{
     .banner_title{
         font-size: 22px;
         text-align: center;
+        line-height: 30px;
     }
     .banner{
         width: 100%;
@@ -476,6 +454,7 @@ footer form .btn{
     }
     .banner .banner-text h3{
         margin-top: 30%;
+        color: #027cc2;
     }
     .banner .banner-text hr {
        margin: auto;
@@ -494,15 +473,9 @@ footer form .btn{
         color: #fff;
         margin-top: 12px;
     }
-    
-    .past-event .header h3{
-        font-size: 22px;
-    }
-    .past-event .header a{
-        font-size: 14px;
-    }
-    .past-event .img-part {
-        height: 280px;
+    .categories .cat{
+        display: flex;
+        justify-content: center;
     }
     .footer-top h4{
         width: 100%;
@@ -554,14 +527,10 @@ footer form .btn{
         display: block;
         width: 90%;
     }
-    
-    .past-event .img-part {
-        height: 210px;
+    .categories img{
+        margin-bottom: 10px;
     }
-    .past-event .img-part img.img11 {
-        width: 70%;
-    }
-     .datamatix-section ul li{
+    .datamatix-section ul li{
         font-size: 14px;
         line-height: 21px;
     }   
@@ -638,7 +607,10 @@ footer form .btn{
     form button.d-flex{
         padding: 5px 10px;
     }
-    
+    .datamatix-section h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
 }
 
 /* end media query */
