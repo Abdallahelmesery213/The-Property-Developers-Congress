@@ -644,5 +644,13 @@ footer form .btn{
         margin-top: 80px !important;
     }
 }
+@media only screen and (max-width: 237px) {
+    .banner_title {
+        font-size: 13px;
+        text-align: left;
+        line-height: 19px;
+        margin-top: 100px !important;
+    }
+}
 
 /* end media query */
