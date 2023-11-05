@@ -627,8 +627,21 @@ footer form .btn{
         padding: 5px 10px;
     }
     .datamatix-section h3 {
-        font-size: 20px;
-        margin-bottom: 12px;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .datamatix-section p , .datamatix-section a {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .datamatix-section{
+        margin-bottom: 25px;
+    }
+    .banner_title {
+        font-size: 18px;
+        text-align: left;
+        line-height: 22px;
+        margin-top: 80px !important;
     }
 }
 
