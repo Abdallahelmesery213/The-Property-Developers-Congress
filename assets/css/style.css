@@ -29,6 +29,11 @@ header{
     /* padding-bottom: 35px; */
     /* border-bottom: 5px solid #027cc2; */
 }
+header .left-part img{
+    width: 100%;
+    min-height: 105px;
+    cursor: pointer;
+}
 header .nav1{
     background-color: #027cc2;
     padding: 0 20px;
@@ -37,14 +42,14 @@ header .nav1{
     align-items: center;
     position: absolute;
     width: 74%;
-    min-height: 90px;
+    min-height: 105px;
 }
 
 /* header .nav1 ul li:first-of-type{
     border-top: 4px solid #027cc2;
 } */
 header .nav1 ul li{
-    font-size: 14px;
+    font-size: 17px;
     margin-right: 25px;
     cursor: pointer;
     padding-top: 5px;
@@ -145,6 +150,7 @@ header .nav2 ul li{
 }
 .datamatix-section p{
     font-size: 21px;
+    line-height: 32px;
 }
 .datamatix-section a{
     color: #027cc2 !important;
@@ -571,6 +577,10 @@ footer form .btn{
     header .nav1 ul li {
         margin-left: 5px;
         font-size: 13px;
+    }
+    header .left-part img{
+        width: auto;
+        height: auto;
     }
 }
 @media only screen and (max-width: 505px) {
