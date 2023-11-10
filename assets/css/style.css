@@ -25,51 +25,82 @@ ul{
 /* start header */
 header{
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     /* padding-bottom: 35px; */
     /* border-bottom: 5px solid #027cc2; */
 }
 header .left-part img{
     width: 100%;
-    min-height: 105px;
+    min-height: 100px;
+    margin-top: 15px;
     cursor: pointer;
 }
-header .nav1{
+header .right-part{
+    width: 74%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+header .right-part .top-nav{
     background-color: #027cc2;
     padding: 0 20px;
+    color: #fff;
+    min-height: 70px;
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+header .right-part .top-nav ul li{
+    margin-right: 21px;
+    position: relative;
+    cursor: pointer;
+}
+header .right-part .top-nav ul li:not(:last-child)::after{
+    content: '';
     position: absolute;
-    width: 74%;
-    min-height: 105px;
+    width: 2px;
+    margin-left: 9px;
+    height: 18px;
+    bottom: 2px;
+    background-color: #fff;
+}
+header .nav1{
+    padding: 0 20px;
+    position: absolute;
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
 }
 
 /* header .nav1 ul li:first-of-type{
     border-top: 4px solid #027cc2;
 } */
 header .nav1 ul li{
-    font-size: 17px;
-    margin-right: 25px;
+    font-size: 14px;
+    margin-right: 20px !important;
     cursor: pointer;
-    padding-top: 5px;
-    margin-left: 2px;
-    color: #fff;
-    font-family: bruumLightFont;
+    font-family: bruumBoldFont;
+    position: relative;
 }
-/* header .nav1 ul li:hover{
-    border-top: 4px solid #1b75ba;
-    transition: all ease-in-out .1s;
-} */
+header .nav1 ul li:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    margin-left: 9px;
+    height: 18px;
+    bottom: 2px;
+    background-color: #000;
+}
+
 .border-right {
-    border-right: 1px solid #027cc2 !important;
+    border-right: 1px solid #fcfcfc !important;
 }
 header .langs{
-    margin-top: 5px;
+    margin-top: -10px;
 }
 header .langs span{
     font-size: 12px;
-    color: #027cc2;
+    color: #fcfcfc;
     cursor: pointer;
 }
 header .nav2{
@@ -91,7 +122,7 @@ header .nav2 ul li{
 /* end header */
 
 .counter-top{
-    background-color: rgba(240,240,241,255);
+    background-color: #1a1a1a;
     padding: 20px 30px;
 }
 .counter-top .btns {
@@ -100,10 +131,16 @@ header .nav2 ul li{
     align-items: center; */
     width: 90%;
 }
-.counter-top .btns button{
+.counter-top .btn-danger{
     padding: 5px 10px;
-    font-size: 14px;
     color: #f1efef;
+    background-color: #bd1e2d;
+    border: none;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 .counter-top .btns .btn-primary{
     background-color: #027cc2;
@@ -112,6 +149,7 @@ header .nav2 ul li{
     font-size: 16px;
     margin-bottom: 0;
     text-align: center;
+    color: #c3c3c3;
 }   
 .counter-top button.btn{
     font-size: 14px;
@@ -234,6 +272,7 @@ header .nav2 ul li{
 .banner .banner-text p{
     font-size: 18px;
     margin-top: 10px;
+    width: 90%;
 }
 .banner .banner-text .btn-primary{
     background-color: #027cc2;
@@ -247,19 +286,72 @@ header .nav2 ul li{
 .categories img{
     margin-bottom: 25px;
 }
-.gallery{
-    margin: 30px 0;
+.gallery button.btn{
+    display: block;
+    margin: 30px auto;
+    padding: 5px 30px;
+    border-radius: 0;
 }
 .gallery img.img-fluid{
     margin-bottom: 20px;
 }
 /* end gallery */
 
+/* start events */
+.events h3{
+    font-weight: bold;
+    margin: 40px 0;
+    text-align: center;
+    font-size: 32px;
+}
+.events .event-card{
+    position: relative;
+    padding: 20px;
+    min-height: 620px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.events .event-card h5{
+    font-family: bruumBoldFont;
+    margin: 20px auto;
+    font-size: 24px;
+}
+.events .card-body p, .card-footer p{
+    color: #8b8b8b;
+}
+.events a{
+    text-decoration: none;
+    color: #fff;
+    font-family: bruumLightFont;
+}
+.events button{
+    background-color: #1b75ba;
+    border-color: #1b75ba;
+    width: 90%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.events .card-footer h6{
+    font-family: bruumBoldFont;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+.events .event-card:hover, .event-card.active{
+    background-color: #f8f8f8;
+    transition: .3s all;
+    cursor: pointer;
+}
+/* end events */
+
 .footer-top h4{
     width: 90%;
     margin: auto;
 }
-
 /* start footer */
 footer{
     padding: 50px 0 0;
@@ -322,6 +414,10 @@ footer form .btn{
     .banner {
         height: 600px;
     }
+    .datamatix-section p, .datamatix-section a {
+        font-size: 25px;
+        line-height: 40px;
+    }
 }
 @media only screen and (max-width: 1344px) {
     header .nav1 ul li {
@@ -340,7 +436,11 @@ footer form .btn{
         transform: translateY(-50%);
     }
 }
-
+@media only screen and (max-width: 1168px) {
+    header .right-part .top-nav ul li {
+        font-size: 14px;
+    }
+}
 @media only screen and (max-width: 1059px) {
     /* header .nav1{
         margin-top: 0;
@@ -388,6 +488,31 @@ footer form .btn{
     .banner .banner-text h3 {
         line-height: 27px;
     }
+    .events h3 {
+        margin: 25px 0;
+        font-size: 25px;
+    }
+    .events .event-card {
+        min-height: 575px;
+    }
+    .events .event-card h5 {
+        font-size: 17px;
+        margin: 15px auto;
+    }
+    .events .card-body p, .card-footer p {
+        color: #8b8b8b;
+        font-size: 14px;
+    }
+    .events .card-footer h6 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    .events a {
+        font-size: 14px;
+    }
+    .events button {
+        padding: 4px 0;
+    }
 }
 @media only screen and (max-width: 940px) {
 
@@ -413,6 +538,34 @@ footer form .btn{
     }
 }
 @media only screen and (max-width: 767px) {
+    header .right-part{
+        position: relative;
+        width: 100%;
+    }
+    header .right-part .top-nav ul li{
+        font-size: 14px;
+    }
+    header .langs span{
+        font-size: 12px;
+    }
+    header .right-part .top-nav {
+        padding: 20px;
+    }
+    header .right-part .top-nav ul li:not(:last-child)::after{
+        position: relative;
+    }
+    header .right-part .top-nav ul li{
+        width: 50%;
+        margin: 5px auto;
+    }
+    header .nav1 ul li:not(:last-child)::after{
+        position: relative;
+        width: 20%;
+    }
+    header .left-part img {
+        width: auto;
+        min-height: auto;
+    }
     header .nav1{
         position: relative;
         width: 100%;
@@ -487,16 +640,26 @@ footer form .btn{
     .banner .banner-text p{
         color: #fff;
         margin-top: 12px;
+        margin: 10px auto;
     }
     .categories .cat{
         display: flex;
         justify-content: center;
     }
+    .category img{
+        margin: 10px auto;
+        display: block;
+    }
+    .events h5 br{
+        display: none;
+    }
+    .events .event-card {
+        min-height: 500px;
+    }
     .footer-top h4{
         width: 100%;
         font-size: 21px;
     }
-
     footer .logo{
         margin-bottom: 20px;
     }
@@ -514,6 +677,10 @@ footer form .btn{
     /* header .nav1{
         padding-bottom: 15%;
     } */
+    header .left-part img {
+        width: 50%;
+        min-height: 60px;
+    }
     header .nav2 {
         padding: 10px 0;
     }
@@ -549,6 +716,9 @@ footer form .btn{
         font-size: 14px;
         line-height: 21px;
     }   
+    .events .event-card {
+        min-height: 535px;
+    }
     .footer-top h4{
         width: 85%;
         font-size: 18px;
@@ -578,10 +748,6 @@ footer form .btn{
         margin-left: 5px;
         font-size: 13px;
     }
-    header .left-part img{
-        width: auto;
-        height: auto;
-    }
 }
 @media only screen and (max-width: 505px) {
     header .nav1 .langs {
@@ -593,6 +759,11 @@ footer form .btn{
     }
     .banner .banner-text h3 {
         margin-top: 40%;
+    }
+}
+@media only screen and (max-width: 460px){
+    header .nav1 ul li{
+        width: 35%;
     }
 }
 @media only screen and (max-width: 418px){
